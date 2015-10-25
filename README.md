@@ -6,7 +6,7 @@ A presentation on Web Animations based on Impress.js
 
 1. have **Read** access to the [ethanchiu10/web-anim-pres](https://bitbucket.org/ethanchiu10/web-anim-pres) repository
 
-1. have your **SSH Keys** installed at [Bitbucket](https://bitbucket.org/)
+1. have your **SSH Keys** installed at [GitHub](https://github.com/)
 
 1. install [GIT](http://git-scm.com/)
 
