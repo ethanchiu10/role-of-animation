@@ -1,0 +1,290 @@
+<!doctype html>
+
+<html lang="en" ng-app="app" ng-controller="AppCtrl">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=1024" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>Role of Web Animations</title>
+
+
+
+  <link rel="stylesheet" href="styles/main.css"/>
+</head>
+
+<body>
+
+
+  <div id="impress" data-transition-duration="1000">
+
+
+
+    <!-- ************************************************************
+    *
+    * INTRO
+    *
+    **************************************************************-->
+    <div id="intro" class="step slide" data-x="-1000">
+      <h1 class="ul">The Role of Animations in the Web</h1>
+      <p>Ethan Chiu</p>
+    </div>
+
+    <div id="why" class="step slide" data-x="0">
+      <h1 class="center">Why bother<span class="bounce">?</span></h1>
+    </div>
+
+    <div id="why-quote" class="step slide" data-x="1000">
+      <q>Brain activation was greater during periods in which coherent motion was perceived</q>
+      <cite>- K.Moutoussis. A binocular rivalry study of motion perception in the human brain</cite>
+    </div>
+
+    <div id="why-web" class="step slide" data-x="2000">
+      <h1>What does that have to do with the <span class="ul anim">web</span>?</h1>
+    </div>
+
+
+    <!-- ************************************************************
+    *
+    * USABILITY
+    *
+    **************************************************************-->
+    <div id="usability-1" class="step slide top-heading" data-x="3000" data-z="0" data-y="0">
+      <h1>1. Usability - Guide the User</h1>
+    </div>
+
+
+    <div id="interactivity" class="step slide demo stay" data-x="2680" data-scale="0.3" data-y="0">
+      <h1>Highlight Interactivity</h1>
+      <iframe src="https://www.chelseacollective.com/"></iframe>
+      <cite class="site">chelseacollective.com</cite>
+    </div>
+
+
+    <div id="hierarchy" class="step slide demo stay" data-x="3000" data-scale="0.3" data-y="0">
+      <h1>Show Hierarchy</h1>
+      <iframe src="http://www.leroynguyen.com/collections/ss15"></iframe>
+      <cite class="site">leroynguyen.com</cite>
+    </div>
+
+
+    <div id="story" class="step slide demo stay" data-x="3320" data-scale="0.3" data-y="0">
+      <h1>Tell a Story</h1>
+      <iframe src="http://distancetomars.com/"></iframe>
+      <cite class="site">distancetomars.com</cite>
+    </div>
+
+    <div id="usability-2" class="step slide top-heading" data-x="3000" data-z="0" data-y="0">
+      <h1>1. Usability - Guide the User</h1>
+    </div>
+
+
+
+    <!-- ************************************************************
+    *
+    * AMUSE
+    *
+    **************************************************************-->
+    <div id="amuse-1" class="step slide top-heading" data-x="4000" data-z="0" data-y="0">
+      <h1>2. Amuse - Inspire Wonder</h1>
+    </div>
+
+
+    <div id="eye-candy" class="step slide demo stay" data-x="3580" data-z="-1000" data-y="-40">
+      <h1>Eye Candy</h1>
+      <!-- <div class="tra-logo">
+        <div class="chara">Technology</div>
+        <div class="chara">Recruitment</div>
+        <div class="chara">Associates</div>
+        <div class="chara">Group</div>
+      </div> -->
+      <iframe src="http://species-in-pieces.com"></iframe>
+      <cite class="site"><a href="http://species-in-pieces.com">species-in-pieces.com</a></cite>
+    </div>
+
+    <div id="playfulness" class="step slide demo stay" data-x="4400" data-z="-2000" data-y="100" data-rotate="40">
+      <h1>Playfulness</h1>
+      <iframe src="http://designmodo.com/demo/apple-tv-parallax/"></iframe>
+      <cite class="site"><a href="http://designmodo.com/demo/apple-tv-parallax/">designmodo.com/apple-tv-parallax/</a></cite>
+    </div>
+
+    <div id="unique-factor" class="step slide demo stay" data-x="5200" data-z="-3000" data-y="700" data-rotate="80" data-rotate-x="-30">
+      <h1>Unique Factor</h1>
+      <iframe src="http://wonder-wall.com"></iframe>
+      <cite class="site"><a href="http://wonder-wall.com">wonder-wall.com</a></cite>
+    </div>
+
+    <div id="amuse-2" class="step slide top-heading" data-x="4000" data-z="0" data-y="0">
+      <h1>2. Amuse - Inspire Wonder</h1>
+    </div>
+
+
+
+
+
+
+    <!-- ************************************************************
+    *
+    * TECH
+    *
+    **************************************************************-->
+    <div id="how" class="step slide" data-x="8000" data-z="0" data-y="0">
+      <h1>Ok, I'm convinced.</h1>
+      <h1><span class="ul">How</span> do I add animations to my site?</h1>
+    </div>
+
+
+    <div id="techniques" class="step slide top-heading" data-x="9000" data-z="0" data-y="0">
+      <h1>Techniques</h1>
+      <ul>
+        <li>CSS Transitions</li>
+        <li>CSS Animations</li>
+        <li>JavaScript</li>
+      </ul>
+    </div>
+
+    <div id="css-transitions" class="step slide top-heading" data-x="10000" data-z="0" data-y="0">
+      <h1>CSS Transitions</h1>
+      <code>
+ball
+  background: red
+  transition: all 1s ease 0s
+
+ball.active
+  background: blue
+  transform: translateY(200px)
+      </code>
+
+      <circle onclick="$(this).toggleClass('active')"></circle>
+
+    </div>
+
+
+    <div id="css-transitions-2" class="step slide top-heading" data-x="10000" data-z="0" data-y="0" data-rotate-x="180">
+      <h1>CSS Transitions - When to use</h1>
+
+      <ul>
+        <li>Simple <span class="ul">state-based</span> animations</li>
+        <li>Can smoothly <span class="ul">cancel</span> animation</li>
+      </ul>
+
+    </div>
+
+
+
+    <div id="css-animations" class="step slide" data-x="11000" data-z="0" data-y="0" data-rotate-x="180">
+      <h1>CSS Animations (Keyframes)</h1>
+      <code>@keyframes pulse
+  0%
+    transform: scale(1)
+  100%
+    transform: scale(0.6)
+
+circle
+  animation: pulse 0.5s infinite alternate
+      </code>
+
+      <circle class="pulse"></circle>
+
+
+    </div>
+
+
+    <div id="css-animations-2" class="step slide top-heading" data-x="11000" data-z="0" data-y="0">
+      <h1>CSS Animations - When to use</h1>
+
+      <ul>
+        <li>Complex <span class="ul">multi-step</span> animations</li>
+        <li><span class="ul">Looping</span> animation</li>
+        <li>Animation that can run in <span class="ul">either direction</span></li>
+      </ul>
+
+      <square class="road-runner"></square>
+
+    </div>
+
+
+
+
+    <div id="js" class="step slide top-heading" data-x="12000" data-z="0" data-y="0">
+      <h1>JavaScript</h1>
+
+      <ul>
+        <li>element.animate()</li>
+        <li>GSAP, TweenJS, Velocity.js</li>
+        <li>Box2D, React Motion</li>
+      </ul>
+
+    </div>
+
+    <div id="js-2" class="step slide top-heading" data-x="12000" data-z="0" data-y="0" data-rotate-x="180">
+      <h1>JavaScript - When to use</h1>
+
+      <ul>
+        <li>Dynamic animations</li>
+        <li>Physics</li>
+        <li>Scroll / Touch / Drag</li>
+      </ul>
+
+      <iframe src="http://chenglou.me/react-motion/demos/demo1-chat-heads/"></iframe>
+      <cite class="site"><a href="http://chenglou.me/react-motion/demos/demo1-chat-heads/">chenglou.me/react-motion</a></cite>
+
+    </div>
+
+
+    <div id="performance" class="step slide top-heading" data-x="13000" data-z="0" data-y="0" data-rotate-x="180">
+      <h1>Performance</h1>
+
+      <ul>
+        <li>Transform</li>
+        <li>Opacity</li>
+        <li>(Some) CSS Filters</li>
+      </ul>
+    </div>
+
+
+    <div id="future" class="step slide top-heading" data-x="14000" data-z="20000" data-y="0" data-rotate-x="180">
+      <h1>Future</h1>
+
+      <ul>
+        <li>Navigation Transitions</li>
+        <li>New CSS Properties that can be transitioned without causing reflows</li>
+      </ul>
+    </div>
+
+
+
+
+    <!-- ************************************************************
+    *
+    * CREDITS
+    *
+    **************************************************************-->
+    <div id="credits" class="step slide top-heading" data-x="15000" data-z="20000" data-y="0" data-rotate-x="180">
+      <h1>Thank You!</h1>
+      <ul>
+        <li>Julian Shapiro</li>
+        <li>Rachel Nabors</li>
+        <li>Karol K</li>
+      </ul>
+      <div class="logo tra" onclick="$(this).toggleClass('invert')">
+        <div class="chara">Technology</div>
+        <div class="chara">Recruitment</div>
+        <div class="chara">Associates</div>
+        <div class="chara">Group</div>
+      </div>
+      <img class="logo cogs" src="images/cogs.png" />
+      <img class="logo culture" src="images/culture.png" />
+      <img class="logo imag" src="images/imag.svg" />
+    </div>
+
+
+
+  </div>
+
+  <script src="components/jquery/dist/jquery.min.js"></script>
+  <script src="lib/impress.js"></script>
+  <script src="scripts/bundle.js"></script>
+</body>
+
+</html>

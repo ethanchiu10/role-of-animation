@@ -1,0 +1,318 @@
+
+// *************************************
+//
+// SLIDE SPECIFIC STYLES
+//
+// *************************************
+
+#intro
+  h1
+    margin-bottom: 60px
+    padding-bottom: 10px
+
+
+#why-quote
+
+  cite
+    display: block
+    margin-left: 100px
+    font-size: 22px
+    margin-top: 20px
+    opacity: 0
+    transition: opacity 0.5s ease 0.5s
+
+  &.present
+    cite
+      opacity: 1
+
+
+#why-web
+  h1
+    font-size: 51px
+
+
+.top-heading
+  height: 640px
+  h1
+    font-size: 52px
+
+
+// #why-list-1, #why-list-2
+//   height: 640px
+//   ol
+//     // width: 600px
+//     margin: 0 auto
+
+//   li
+//     margin: 0px 0 300px
+
+// #why-list-1
+//   li:nth-child(2)
+//     opacity: 0
+
+// #why-list-2
+//   li:nth-child(1)
+//     transition: none
+
+// #why-list-3
+//   li
+//     transition: none !important
+
+
+.demo
+  height: 640px
+
+  >h1
+    margin: 10px 0 20px
+
+  iframe
+    height: 510px
+
+
+
+
+.stay
+  &.past
+    opacity: 1
+
+
+
+
+#how
+  h1:nth-child(2)
+    opacity: 0
+    transition: all 0.5s ease 2s
+
+
+  &.active
+    h1:nth-child(2)
+      opacity: 1
+
+
+
+#css-transitions
+  h1
+    margin-bottom: 0
+
+
+// #css-transitions-2, #css-animations-2, #js, #js-2, #performance, #techniques
+//   ul
+//     margin-left: 30px
+
+//   li
+//     margin: 30px 0
+
+
+#css-animations
+  code
+    height: 460px
+
+  circle
+    left: 560px
+    top: 230px
+
+
+#css-animations-2
+  square
+    left: 400px
+    top: 460px
+
+
+
+circle
+  width: 100px
+  height: 100px
+  display: block
+  border-radius: 50%
+  position: absolute
+  top: 170px
+  left: 600px
+
+  background: #d9534f
+  transition: all 1s ease 0s
+
+  &.active
+    background: #337ab7
+    transform: translateY(180px)
+
+  &.pulse
+    animation: pulse-light 0.5s infinite alternate
+
+
+square
+  display: block
+  width: 100px
+  height: 100px
+  background: #337ab7
+  position: absolute
+
+
+  &.road-runner
+    animation: road-runner 2800ms linear infinite both
+
+
+
+#js-2
+  iframe
+    position: absolute
+    top: 130px
+    width: 400px
+    height: 400px
+    left: 450px
+
+  cite
+    position: absolute
+    top: 530px
+    right: 54px
+
+
+
+
+
+#credits
+
+  li
+    margin: 10px 0
+    transition: none !important
+    opacity: 1 !important
+    transform: none !important
+
+
+  .logo
+    position: absolute
+
+  .culture
+    top: 40px
+    width: 400px
+    right: 50px
+
+  .imag
+    width: 300px
+    right: 105px
+    top: 320px
+
+  .cogs
+    right: 130px
+    top: 460px
+    width: 250px
+
+
+
+
+  // *************************************
+  //
+  // TRA LOGO
+  //
+  // *************************************
+
+  .tra
+    margin: 100px auto
+    font-family: Arial
+    text-transform: uppercase
+    font-weight: bold
+    letter-spacing: 6px
+    color: #172B46
+    display: inline-block
+    position: absolute
+    top: 300px
+    padding: 14px 20px
+    transition: background 1s ease 0s
+    border-radius: 14px
+    line-height: 1.1em
+    // cursor: url(/images/pom.cur), auto
+
+
+    .blast
+      opacity: 0
+
+    .blast-root
+      .blast
+        transition: all 1s ease 0s
+        &:first-child
+          color: white
+          // opacity: 1
+
+    >div.blast-root
+      &:last-child
+        color: white
+        .blast
+          // opacity: 1
+
+
+
+      @for $row from 1 through 3
+        &:nth-child( #{$row} )
+          @for $col from 2 through 11
+            .blast:nth-child(#{$col})
+              transition-delay: $row * 0.4s + $col * 0.15s + 0.8s
+
+
+    $time: 0.15s
+
+    div.blast-root:nth-child(1) .blast:first-child
+      transition-delay: $time * 0
+    div.blast-root:nth-child(2) .blast:first-child
+      transition-delay: $time * 1
+    div.blast-root:nth-child(3) .blast:first-child
+      transition-delay: $time * 2
+    div.blast-root:nth-child(4)
+      @for $i from 1 through 5
+        .blast:nth-child(#{$i})
+          transition-delay: $time * $i + $time * 2
+      // .blast:nth-child(1)
+      //   transition-delay: 0.6s
+      // .blast:nth-child(2)
+      //   transition-delay: 0.6s
+      // .blast:nth-child(3)
+      //   transition-delay: 0.6s
+      // .blast:nth-child(4)
+      //   transition-delay: 0.6s
+      // .blast:nth-child(5)
+      //   transition-delay: 0.6s
+
+
+
+    // &.invert
+    //   background: white
+    //   color: #CCCCCC
+
+    //   .blast-root
+    //     .blast
+    //       &:first-child
+    //         color: black
+
+
+    //   >div.blast-root
+    //     &:last-child
+    //       color: black
+
+
+  &.present.active
+    .blast
+      opacity: 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

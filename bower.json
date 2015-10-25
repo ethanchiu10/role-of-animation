@@ -1,0 +1,21 @@
+{
+  "name": "Web Animation Presentation",
+  "version": "0.0.1",
+  "authors": [
+    "Ethan Chiu"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  },
+  "keywords": [
+    "gulp",
+    "angular",
+    "browserify"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "app/components"
+  ]
+}

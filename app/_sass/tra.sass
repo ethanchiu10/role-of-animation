@@ -1,0 +1,47 @@
+
+#eye-candy
+
+  .tra-logo
+    margin: 100px auto
+    font-family: Arial
+    text-transform: uppercase
+    font-weight: bold
+    letter-spacing: 6px
+    color: #172B46
+    cursor: url(/images/pom.cur), auto
+
+    .blast
+      opacity: 0
+
+    .blast-root
+      .blast
+        transition: opacity 0.8s ease 0s
+        &:first-child
+          color: white
+          opacity: 1
+
+
+    >div.blast-root
+      &:last-child
+        color: white
+        .blast
+          opacity: 1
+
+
+
+      @for $row from 1 through 3
+        &:nth-child( #{$row} )
+          @for $col from 2 through 11
+            .blast:nth-child(#{$col})
+              transition-delay: $row * 0.6s + $col * 0.1s
+
+  &.active
+    .blast
+      opacity: 1
+
+
+
+
+
+
+
